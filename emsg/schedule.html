@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>emsg</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Style the header */
+      header {
+        background-color: rgb(106, 154, 192);
+        padding: 25px;
+        text-align: left;
+        font-size: 30px;
+        color: rgb(239, 216, 79);
+      }
+
+      /* Container for flexboxes */
+      section {
+        display: -webkit-flex;
+        display: flex;
+      }
+
+      /* Style the navigation menu */
+      nav {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 0;
+        background: #ccc;
+        padding: 20px;
+      }
+
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: circle;
+        padding: 20px;
+        font-size: 16px;
+      }
+
+      /* Style the content */
+      article {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: #f1f1f1;
+        padding: 15px;
+      }
+
+      /* Style the footer */
+      footer {
+        background-color: rgb(239, 216, 79);
+        padding: 30px;
+        text-align: right;
+        color: white;
+      }
+
+      /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+      @media (max-width: 600px) {
+        section {
+          -webkit-flex-direction: column;
+          flex-direction: column;
+        }
+      }
+      /*style the hyperlinsk */
+      a:link {
+        color: rgb(106, 154, 192);
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: rgb(52, 127, 189);
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: rgb(239, 216, 79);
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: grey;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Edinburgh Meaning Sciences Group</h2>
+    </header>
+
+    <section>
+      <nav>
+        <img
+          src="/images/emsg-logo1.png"
+          alt="emsg logo"
+          style="
+            object-fit: cover;
+            float: left;
+            width: 250px;
+            height: 250px;
+            padding-right: 20px;
+          "
+        />
+        <br />
+        <hr />
+        <hr />
+        <ul>
+          <li><a href="/index.html">HOME</a></li>
+          <li><a href="/emsg/schedule.html">SCHEDULE</a></li>
+          <li><a href="/emsg/members.html">MEMBERS</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>Schedule</h1>
+        <iframe
+          src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23347fbd&ctz=Europe%2FLondon&mode=MONTH&showTitle=1&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=1&title&src=NzI4a3BnOTluM2w4ZXBkM2QxNW9kNDZwbTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23E67C73"
+          style="border: solid 1px #777"
+          width="800"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </article>
+    </section>
+
+    <footer></footer>
+  </body>
+</html>
